@@ -1,0 +1,1 @@
+javascript:(()=>{window.localStorage.setItem("safeMode", false);const includes = Array.prototype.includes; Array.prototype.includes = function(){ const ret = includes.apply(this, arguments); const isFilterList = includes.call(this, "titties"); return isFilterList ? false : ret; };alert("Safe mode and filter list has been disabled!")})(); 
